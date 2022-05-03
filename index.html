@@ -33,6 +33,7 @@ src="https://www.youtube.com/embed/dQw4w9WgXcQ?mute=1">
     <button onclick="getLocation()">Don't press this</button>
     <button onclick="lol()">test</button>
     <div id="demo"></div>
+    <div id="test"></div>
 
 
 <script>
@@ -42,6 +43,7 @@ var test2 = testing + test;
 document.write(test2);
 
 var x = document.getElementById("demo");
+    var ligma = document.getElementById("test");
     
     function setMyKeyDownListener() {
     window.addEventListener(
@@ -51,7 +53,7 @@ var x = document.getElementById("demo");
 }
 
 function lol(the_Key) {
-    alert("Key pressed is: "+the_Key);
+    ligma.innerHTML = ("Key pressed is: "+the_Key);
 }
 
 function getLocation() {
