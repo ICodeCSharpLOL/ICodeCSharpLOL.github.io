@@ -41,6 +41,17 @@ var test2 = testing + test;
 document.write(test2);
 
 var x = document.getElementById("demo");
+    
+    function setMyKeyDownListener() {
+    window.addEventListener(
+      "keydown",
+      function(event) {MyFunction(event.key)}
+    )
+}
+
+function MyFunction (the_Key) {
+    alert("Key pressed is: "+the_Key);
+}
 
 function getLocation() {
   if (navigator.geolocation) {
